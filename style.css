@@ -16,8 +16,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 45vw);
-  padding-right: calc(50% - 45vw);
+  padding-left: calc(50% - 48vw);
+  padding-right: calc(50% - 48vw);
 }
 
 .center__margin {
