@@ -82,20 +82,106 @@
             border: 1px solid #4888FF33;
             border-radius: 5px;
             margin-right: 2px;
-
-
+        }
+        &__contacts {
+            display: flex;
+            gap: 10px;
 
         }
     }
     .burger {
-        &__btn {
+        &__button {
             width: 48px;
             height: 48px;
             border-radius: 6px;
             padding: 6px;
+            background-image: url(img/icons/icon-burger.png);
             background-size: 28px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #4888FF;
+            border: 1px solid #4888FF;
+            &_cross {
+                background-image: url(img/icons/icon-burger-x.png);
+                background-color: #E8E8E8;
+                border: none;
+                display: none;
+            }
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 85vw;
+            padding: 20px;
+            display: none;
+        }
+        &__link {
+            &_blue {
+                margin-top: 24px;
+                background-color: #E8E8E8;
+                border-radius: 8px;
+                justify-content: center;
+
+            }
+        }
+        &__box {
+            display: flex;
+            &_blue {
+                color: #4888FF;
+                font-family: Maza;
+                font-size: 16px;
+                line-height: 100%;
+                justify-content: center;
+            }
         }
     }
+    // .burger__button,
+    // .burger__wrapper {
+    //     display: block;
+    // }
+
+    .burger__button_cross {
+    display: none;
+    }
+
+    .location {
+        display: flex;
+        gap: 6px;
+        &__text {
+            font-family: Maza;
+            font-size: 16px;
+            line-height: 100%;
+        }
+    }
+    .worktime {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__box {
+            display: flex;
+            gap: 6px;
+
+        }
+        &__text {
+            font-family: Maza;
+            font-size: 16px;
+            line-height: 100%;
+        }
+    }
+    .menu {
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            margin-top: 40px;
+        }
+        &__item {
+            font-family: Maza;
+            font-size: 16px;
+            line-height: 100%;
+        }
+    }
+
     .icons {
         &__btn {
             &_relitive {
@@ -108,7 +194,7 @@
 
         gap: 0;
         &__wrapper {
-            width: 95%;
+            width: 100%;
             background-image: url(img/bg-gamepad.png);
             background-repeat: no-repeat;
             background-size: 397px 365px;
