@@ -1,0 +1,140 @@
+@media (max-width: 1255px) {
+    .header { 
+        display: none;
+    }
+    .adaptive {
+        display: block;
+        width: 100vw;
+        &__top {
+            background-color: #F4F4F4;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 26px;
+        }
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3px;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+        &__btns {
+            display: flex;
+            gap: 6px;
+        }
+        &__wrapper {
+            position: relative;
+        }
+        &__counter {
+            width: 20px;
+            height: 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #4888FF;
+            font-family: Maza;
+            font-size: 12px;
+            line-height: 100%;
+            color: #F4F4F4;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            z-index: 100;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &__logo {
+            &-img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+        &__input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            border: 1px solid #4888FF33;
+            border-radius: 8px;
+            margin-bottom: 24px;
+
+        }
+        &__btn {
+            width: 40px;
+            height: 40px;
+            background-color: #4888FF;
+            border: 1px solid #4888FF33;
+            border-radius: 5px;
+            margin-right: 2px;
+
+
+
+        }
+    }
+    .burger {
+        &__btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            padding: 6px;
+            background-size: 28px;
+        }
+    }
+    .icons {
+        &__btn {
+            &_relitive {
+                position: relative;
+            }
+        }
+    }
+    .content {
+        flex-direction: column;
+
+        gap: 0;
+        &__wrapper {
+            width: 95%;
+            background-image: url(img/bg-gamepad.png);
+            background-repeat: no-repeat;
+            background-size: 397px 365px;
+            background-position-x: 70vw;
+            background-position-y: bottom;
+            padding-bottom: 280px;
+            overflow: hidden;
+        }
+        &__title {
+            font-size: 26px;
+            display: block;
+        }
+        &__text {
+            font-size: 14px;
+            display: block;
+
+        }
+        &__bg {
+            display: none;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .content {
+        &__wrapper {
+            background-position-x: 50vw;
+        }
+    }
+}
