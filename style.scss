@@ -341,13 +341,17 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 134px;
+    height: 100vh;
     &__wrapper {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
         padding-top: 84px;
-        padding-left: 30px;
-
+        padding-left: 3%;
+        padding-right: 7%;
     }
     &__title {
+        display: block;
         font-family: Tenor Sans;
         font-weight: 400;
         font-size: 32px;
@@ -356,6 +360,7 @@ body {
 
     }
     &__text {
+        display: block;
         font-family: Tenor Sans;
         font-weight: 400;
         font-size: 18px;
